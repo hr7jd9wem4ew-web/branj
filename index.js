@@ -1,76 +1,46 @@
-// -------------Завдання 1----------------
+products = [
+  { id: 1, name: "Ноутбук", price: 25000, quantity: 3, isAvailable: true },
+  { id: 2, name: "Смартфон", price: 18000, quantity: 5, isAvailable: true },
+  { id: 3, name: "Навушники", price: 1200, quantity: 0, isAvailable: false },
+  { id: 4, name: "Планшет", price: 15000, quantity: 2, isAvailable: true },
+  { id: 5, name: "Монітор", price: 7000, quantity: 4, isAvailable: true },
+  { id: 6, name: "Клавіатура", price: 800, quantity: 10, isAvailable: true },
+  { id: 7, name: "Мишка", price: 600, quantity: 0, isAvailable: false },
+  { id: 8, name: "Принтер", price: 5000, quantity: 1, isAvailable: true }
+]
 
-// const num = function (a, b) {
-//   switch (true) {
-//     case a < b:
-//       return -1;
-//     case a > b:
-//       return 1;
-//     default:
-//       return 0;
-//   }
-// }
+// --------Завдання 1 - Вивести всі назви товарів------
 
-// -------------Завдання 2----------------
+console.log(products.map(el => el.name));
 
-// const num1 = function (n) {
-//   if (n < 0) {
-//     return "Від'ємне число";
-//   }
-//   let num2 = 1;
-//   for (let i = 1; i <= n; i++) {
-//     num2 *= i;
-//   }
-//   return num2;
-// }
+// --------Завдання 2 - Знайти товар за конкретним id.------
 
-// -------------Завдання 3----------------
+console.log(products.find(el => el.id ===1));
 
-// const num = function (a, b, c) {
-//   return a * 100 + b * 10 + c;
-// }
+// --------Завдання 3 - Порахувати загальну вартість всіх товарів (price * quantity).------
 
-// -------------Завдання 4----------------
+console.log(products.reduce((acc, el) => acc + el.quantity * el.price, 0));
 
-// const num = function (a, b) {
-//     if (b === undefined) {
-//         b = a;
-//     }
-//     return a * b;
-// }
+// --------Завдання 4 - Порахувати, скільки всього товарів на складі (сумарна кількість).------
 
-// -------------Завдання 5----------------
+console.log(products.reduce((a, b) => a + b.quantity, 0));
 
-// const num = function (n) {
-//     if (n < 1) return false;
-//     let sum = 0;
-//     for (let i = 1; i < n; i++) {
-//         if (n % i === 0) {
-//             sum += i;
-//         }
-//     }
-//     return sum === n;
-// }
+// --------Завдання 5 - Відсортувати товари за ціною від дешевих до дорогих.------
 
-// -------------Завдання 6----------------
+console.log(products.sort((a, b) => a.price - b.price));
 
-// const num = function (n) {
-//     if (n < 1) return false;
-//     let sum = 0;
-//     for (let i = 1; i < n; i++) {
-//         if (n % i === 0) {
-//             sum += i;
-//         }
-//     }
-//     return sum === n;
-// }
+// --------Завдання 6 - Вивести всі товари, яких немає в наявності (isAvailable == false).------
 
-// const range = function (min, max) {
-//     let result = [];
-//     for (let i = min; i <= max; i++) {
-//         if (num(i)) {
-//             result.push(i);
-//         }
-//     }
-//     return result;
-// }
+console.log(products.filter(el => !el.isAvailable));
+
+// --------Завдання 7 - Вивести товари, у яких price > 10000.------
+
+console.log(products.filter(el => el.price > 10000));
+
+// --------Завдання 8 - Перевірити, чи всі товари в наявності (isAvailable == true).------
+
+console.log(products.every(el => el.isAvailable));
+
+// --------Завдання 9 - Перевірити, чи хоча б один товар дешевший за 1000.------
+
+console.log(products.some(el => el.price < 1000));
