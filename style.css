@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+:root {
+    --color1: #FFFFFF;
+    --color2: #26C7EA;
+    --color3: #0B0E66;
+    --color4: #FFFDFD;
+    --color5: #3576C6;
+    --color6: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+/*------------------------header  ---------------------------------------------------------*/
+
+.header-wrap {
+    width: 1440px;
+    height: 150px;
+    border: 2px solid var(--color4);
+    background-color: var(--color5);
+    gap: 260px;
+
+}
+
+.part1 img {
+    height: 127px;
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.header-wrap a {
+    white-space: nowrap;
+}
+
+.click {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color1);
+    gap: 40px;
+}
+
+.header-menu li:nth-child(3) a.click {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color3)
+}
+
+.header-menu {
+    gap: 45px;
+    margin-top: 63px;
+}
+
+.part3 {
+    width: 197px;
+    height: 49px;
+    margin-top: 51px;
+    margin-right: 72px;
+    border-style: none;
+    background-color: var(--color3);
+}
+
+.button {
+    font-family: "Inter", sans-serif;
+    color: var(--color2);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 12.5px 33.3px;
+    display: block;
+}
+
+/*------------------------main  ---------------------------------------------------------*/
+/*------------------------section1  ---------------------------------------------------------*/
+
+.section1-wrap {
+    width: 1440px;
+    height: 700px;
+    background-image: url(./images/sec1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section1-wrap .matandjava {
+    width: 569px;
+    height: 120px;
+    background-color: var(--color5);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 510px;
+    margin-left: 436px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section1-wrap .matandjava h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--color4);
+}
+
+/*------------------------main  ---------------------------------------------------------*/
+/*------------------------section2  ---------------------------------------------------------*/
+
+.section2-wrap {
+    width: 1440px;
+}
+
+.gridall {
+    display: grid;
+    justify-content: center;
+    margin-top: 96px;
+    margin-left: 100px;
+    margin-bottom: 91px;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-rows: repeat(2, 360px);
+    row-gap: 50px;
+    column-gap: 100px;
+}
+
+.gridall .calc {
+    border: 1px solid var(--color6)
+}
+
+.gridall .calc h3 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.gridall .calc p {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.gridall .calc input {
+    margin-left: 15px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid var(--color5)
+}
+
+.gridall .calc .boxbtn {
+    margin-top: 10px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gridall .calc button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color5)
+}
+
+.gridall .vgaday {
+    border: 1px solid var(--color6)
+}
+
+.gridall .vgaday h3 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.gridall .vgaday input {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 33px;
+    border: 1px solid var(--color5)
+}
+
+.gridall .vgaday button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid var(--color5)
+}
+
+.gridall .vgaday p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.gridall .igra h3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gridall .igra button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid var(--color5);
+}
+
+.gridall .igra p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.gridall .igra {
+    border: 1px solid var(--color6)
+}
+
+.gridall .maxmin h3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gridall .maxmin input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid var(--color5)
+}
+
+.gridall .maxmin button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid var(--color5);
+}
+
+.gridall .maxmin p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.gridall .maxmin {
+    border: 1px solid var(--color6)
+}
+
+/*------------------------footer  ---------------------------------------------------------*/
+
+.footer-wrap {
+    width: 1440px;
+    height: 243px;
+    background-color: var(--color5);
+}
+
+.footer-wrapall .logo1 {
+    width: 224px;
+    height: 158px;
+    margin-top: 28px;
+    margin-left: 99px;
+}
+.footer-wrapall .social {
+    margin-top: 40px;
+    margin-left: 164px;
+}
+
+.footer-wrapall .social h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color2);
+}
+
+.footer-wrapall .social p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color4)
+}
+
+.social .school1 {
+    padding-top: 20px;
+}
+
+.social .school2 {
+    padding-top: 20px;
+}
+
+.social .socialfoto {
+    gap: 25px;
+    padding-top: 30px;
+}
+
+
+.footer-wrapall .contacts {
+    margin-top: 40px;
+    margin-left: 122px;
+}
+
+.footer-wrapall .contacts h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color2);
+    padding-left: 53px;
+}
+
+.contacts .con1 p {
+ font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color4);
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.contacts .con2 p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color4);
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.contacts p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--color2);
+    padding-top: 10px;
+    padding-left: 53px;
+}
